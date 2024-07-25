@@ -1,0 +1,90 @@
+body { 
+    background-color: rgb(255, 255, 255);
+}
+.calculator { 
+    display: grid;
+    grid-template-rows: minmax(80px,auto)
+    repeat(5,60px);
+    grid-template-columns: repeat(4,60px);
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.4rem;
+    border-radius: 12px;
+    gap: 0.7rem;
+}
+.calculator button { 
+    border: none;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(230, 6%, 20%);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+    transition: all 0.3s ease;
+
+}
+.calculator button:hover { 
+    background-color: hsl(230,6%,30%);
+    box-shadow: 10px 10px 10px black;
+    transform: translateX(-1px);
+}
+.span-2 { 
+    grid-column: span 2;
+}
+.calculator > .output { 
+    font-size: 2rem;
+    background-color: inherit;
+    color: rgb(0, 0, 0);
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    word-break: break-all;
+    border-radius: inherit;
+    border: 3px solid gray;
+    font-family: cursive;
+    box-shadow: 5px 5px 10px black;
+    transition: all 0.3s ease;
+
+}
+.calculator > .output:hover { 
+    box-shadow: 10px 10px 10px black;
+
+}
+.output .prev-display { 
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: hsl(0,0%,65%);
+}
+.Heading { 
+    letter-spacing: 2px;
+    font-family: cursive;
+    text-shadow: 2px 2px 8px black;
+    border: 5px solid rgb(0, 0, 0);
+    border-top: none;
+    border-left: 10px;
+    border-right: 10px;
+    width: fit-content;
+    margin-left: 42%;
+    border-radius: 20px;
+    border-spacing: 20px;
+
+
+}
+.sub-head { 
+    letter-spacing: 2px;
+    font-family: cursive;
+    text-shadow: 2px 2px 8px black;
+    border: 5px solid rgb(0, 0, 0);
+    border-top: none;
+    border-left: 10px;
+    border-right: 10px;
+    width: fit-content;
+    margin-left: 45%;
+    border-radius: 20px;
+    border-spacing: 20px;
+
+}
